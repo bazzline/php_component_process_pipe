@@ -30,13 +30,13 @@ It is also available at [openhub.net](http://www.openhub.net/p/718154).
 
 # Examples
 
-* [no input](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/NoInput/run.php]
-* [input array](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputArray/run.php]
-* [failing execution](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/FailingExecution/run.php]
-* [input generator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputGenerator/run.php]
-* [input transformer](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputTransformer/run.php]
-* [input validator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputValidator/run.php]
-* [data flow manipulator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/DataFlowManipulator/run.php]
+* [no input](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/NoInput/run.php)
+* [input array](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputArray/run.php)
+* [failing execution](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/FailingExecution/run.php)
+* [input generator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputGenerator/run.php)
+* [input transformer](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputTransformer/run.php)
+* [input validator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputValidator/run.php)
+* [data flow manipulator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/DataFlowManipulator/run.php)
 
 # Install
 
