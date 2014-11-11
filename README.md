@@ -58,6 +58,7 @@ It is also available at [openhub.net](https://www.openhub.net/p/php_component_pr
 
 ```php
 use Net\Bazzline\Component\ProcessPipe\ExecutableException;
+use Net\Bazzline\Component\ProcessPipe\InvalidArgumentException;
 use Net\Bazzline\Component\ProcessPipe\Pipe;
 
 try {
@@ -71,12 +72,15 @@ try {
     $output = $pipe->execute($input);
 } catch (ExecutableException) {
     //handle process exception
+} catch (InvalidArgumentException) {
+    //handle pipe exception
 }
 ```
 ## By using the pipe method once for each process
 
 ```php
 use Net\Bazzline\Component\ProcessPipe\ExecutableException;
+use Net\Bazzline\Component\ProcessPipe\InvalidArgumentException;
 use Net\Bazzline\Component\ProcessPipe\Pipe;
 
 try {
@@ -88,6 +92,8 @@ try {
     $output = $pipe->execute($input);
 } catch (ExecutableException) {
     //handle process exception
+} catch (InvalidArgumentException) {
+    //handle pipe exception
 }
 ```
 
@@ -95,6 +101,7 @@ try {
 
 ```php
 use Net\Bazzline\Component\ProcessPipe\ExecutableException;
+use Net\Bazzline\Component\ProcessPipe\InvalidArgumentException;
 use Net\Bazzline\Component\ProcessPipe\Pipe;
 
 try {
@@ -106,6 +113,8 @@ try {
     $output = $pipe->execute($input);
 } catch (ExecutableException) {
     //handle process exception
+} catch (InvalidArgumentException) {
+    //handle pipe exception
 }
 ```
 
