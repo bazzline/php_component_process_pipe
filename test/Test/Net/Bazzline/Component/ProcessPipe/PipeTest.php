@@ -87,15 +87,4 @@ class PipeTest extends TestCase
         $this->markTestIncomplete();
     }
     //end of tests
-
-    //begin of helper
-    /**
-     * @return Pipe
-     * @todo move into project based test case
-     */
-    private function getNewPipe()
-    {
-        return new Pipe();
-    }
-    //begin of helper
 }
