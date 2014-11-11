@@ -3,4 +3,4 @@
 //clean
 shell_exec('rm -fr document/*');
 //and rebuild
-system('php vendor/bin/apigen --source source/Net/Bazzline/Component/ProcessForkManager/ --destination document/ --title "Process Fork Manager by Bazzline"');
+system('php vendor/bin/apigen --source source/Net/Bazzline/Component/ProcessPipe/ --destination document/ --title "Process Pipe by Bazzline"');
