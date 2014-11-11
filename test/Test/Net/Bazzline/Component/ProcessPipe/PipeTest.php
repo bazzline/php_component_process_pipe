@@ -7,6 +7,7 @@
 namespace Test\Net\Bazzline\Component\ProcessPipe;
 
 use Net\Bazzline\Component\ProcessPipe\Pipe;
+use stdClass;
 
 /**
  * Class PipeTest
@@ -17,74 +18,126 @@ class PipeTest extends TestCase
     //begin of tests
     public function testConstructNoProcess()
     {
-        $pipe = new Pipe();
-        $pipe->execute();
+        new Pipe();
     }
 
     public function testConstructWithSingleProcess()
     {
-        $this->markTestIncomplete();
+        new Pipe($this->getMockOfProcess());
     }
 
     public function testConstructWithMultipleProcess()
     {
-        $this->markTestIncomplete();
+        new Pipe(
+            $this->getMockOfProcess(),
+            $this->getMockOfProcess()
+        );
     }
 
-    public function testConstructWithInvalidArgument()
-    {
-        $this->markTestIncomplete();
-    }
-
+    /**
+     * @expectedException \Net\Bazzline\Component\ProcessPipe\InvalidArgumentException
+     * @expectedExceptionMessage Argument 1 passed to Net\Bazzline\Component\ProcessPipe\Pipe::pipe() must implement interface Net\Bazzline\Component\ProcessPipe\ExecutableInterface, instance of stdClass given
+     */
     public function testConstructWithInvalidArguments()
     {
-        $this->markTestIncomplete();
-    }
-
-    public function testPipeNoProcess()
-    {
-        $pipe = $this->getNewPipe();
-        $pipe->execute();
+        new Pipe(
+            $this->getMockOfProcess(),
+            new stdClass()
+        );
     }
 
     public function testPipeWithSingleProcess()
     {
-        $this->markTestIncomplete();
+        $pipe = $this->getNewPipe();
+        $pipe->pipe($this->getMockOfProcess());
     }
 
-    public function testPipeWithInvalidArgument()
-    {
-        $this->markTestIncomplete();
-    }
-
+    /**
+     * @expectedException \Net\Bazzline\Component\ProcessPipe\InvalidArgumentException
+     * @expectedExceptionMessage Argument 2 passed to Net\Bazzline\Component\ProcessPipe\Pipe::pipe() must implement interface Net\Bazzline\Component\ProcessPipe\ExecutableInterface, instance of stdClass given
+     */
     public function testPipeWithInvalidArguments()
     {
-        $this->markTestIncomplete();
+        $pipe = $this->getNewPipe();
+        $pipe->pipe(
+            $this->getMockOfProcess(),
+            $this->getMockOfProcess(),
+            new stdClass()
+        );
     }
 
     public function testPipeWithMultipleProcess()
     {
-        $this->markTestIncomplete();
+        $pipe = $this->getNewPipe();
+        $pipe->pipe(
+            $this->getMockOfProcess(),
+            $this->getMockOfProcess()
+        );
     }
 
+    /**
+     * @expectedException \Net\Bazzline\Component\ProcessPipe\ExecutableException
+     * @expectedExceptionMessage unit test
+     */
     public function testExecuteWithFailingProcess()
     {
-        $this->markTestIncomplete();
+        $process = $this->getMockOfProcess();
+        $pipe = $this->getNewPipe();
+
+        $process->shouldReceive('execute')
+            ->once()
+            ->andThrow('Net\Bazzline\Component\ProcessPipe\ExecutableException', 'unit test');
+
+        $pipe->pipe($process);
+        $pipe->execute();
     }
 
     public function testExecuteWithNoInput()
     {
-        $this->markTestIncomplete();
+        $expectedOutput = __LINE__;
+        $process = $this->getMockOfProcess();
+        $pipe = $this->getNewPipe();
+
+        $process->shouldReceive('execute')
+            ->once()
+            ->andReturn($expectedOutput);
+
+        $pipe->pipe($process);
+        $output = $pipe->execute();
+
+        $this->assertEquals($expectedOutput, $output);
     }
 
     public function testExecuteWithNoOutput()
     {
-        $this->markTestIncomplete();
+        $process = $this->getMockOfProcess();
+        $pipe = $this->getNewPipe();
+
+        $process->shouldReceive('execute')
+            ->once();
+
+        $pipe->pipe($process);
+        $output = $pipe->execute();
+
+        $this->assertNull($output);
     }
 
     public function testExecuteWithInputAndOutput()
     {
-        $this->markTestIncomplete();
+        $expectedOutput = __LINE__;
+        $input = __LINE__;
+        $process = $this->getMockOfProcess();
+        $pipe = $this->getNewPipe();
+
+        $process->shouldReceive('execute')
+            ->once()
+            ->with($input)
+            ->andReturn($expectedOutput);
+
+        $pipe->pipe($process);
+        $output = $pipe->execute($input);
+
+        $this->assertEquals($expectedOutput, $output);
     }
     //end of tests
 }
