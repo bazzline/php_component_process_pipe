@@ -14,6 +14,7 @@ interface PipeInterface extends ExecutableInterface
 {
     /**
      * @param ExecutableInterface $process - or more
+     * @throws InvalidArgumentException
      * @return $this
      */
     public function pipe(ExecutableInterface $process);
