@@ -1226,17 +1226,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "dev-master",
+            "version": "2.6.x-dev",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "3db1d6cb51b49840e0f3b1663da23cccf0286bf6"
+                "reference": "ff1193da791bfbad1a8d506cf91ee4575e3450fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/3db1d6cb51b49840e0f3b1663da23cccf0286bf6",
-                "reference": "3db1d6cb51b49840e0f3b1663da23cccf0286bf6",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/ff1193da791bfbad1a8d506cf91ee4575e3450fe",
+                "reference": "ff1193da791bfbad1a8d506cf91ee4575e3450fe",
                 "shasum": ""
             },
             "require": {
@@ -1245,7 +1245,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -1269,7 +1269,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-10 18:00:54"
+            "time": "2014-11-03 03:55:50"
         },
         {
             "name": "texy/texy",
