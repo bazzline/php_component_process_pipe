@@ -51,13 +51,14 @@ class Pipe implements PipeInterface
     {
         foreach (func_get_args() as $index => $process) {
             if ($process instanceof ExecutableInterface) {
+                $this->processes[] = $process;
+            } else {
                 $message = 'Argument ' . $index . ' passed to ' . __METHOD__ .
                     ' must implement interface ' .
                     'Net\Bazzline\Component\ProcessPipe\ExecutableInterface' .
                     ', instance of ' . get_class($process) . ' given';
                 throw new InvalidArgumentException($message);
             }
-            $this->processes[] = $process;
         }
 
         return $this;
