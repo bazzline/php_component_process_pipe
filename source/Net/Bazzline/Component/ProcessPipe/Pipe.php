@@ -22,7 +22,7 @@ class Pipe implements PipeInterface
      * @param ExecutableInterface $_ [optional]
      * @throws InvalidArgumentException
      */
-    public function __construct(ExecutableInterface $process, $_ = null)
+    public function __construct(ExecutableInterface $process = null, $_ = null)
     {
         $this->processes = array();
 
