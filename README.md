@@ -28,6 +28,13 @@ Downloads:
 @todo
 It is also available at [openhub.net](http://www.openhub.net/p/718154).
 
+# Why?
+
+* separate complex operations into simpler
+* separate responsibility (data generator/transformer/validator/flow manipulator)
+* create process chains you can read in the code (separate integration code from operation code)
+* easy up unit testing for smaller processes
+
 # Examples
 
 * [no input](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/NoInput/run.php)
@@ -103,3 +110,8 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 * [pipes](https://github.com/vkartaviy/pipes)
 * [php-pipeline](https://github.com/JosephMoniz/php-pipeline)
 * [php-pipeline-lib](https://github.com/phppro/php-pipeline-lib)
+* [warmans pipeline](https://github.com/warmans/pipeline)
+* [piper](https://github.com/yuya-takeyama/piper)
+* [tacone pipes](https://github.com/tacone/pipes)
+* [plumber](https://github.com/jadell/plumber)
+
