@@ -1,7 +1,7 @@
 <?php
 /**
  * @author stev leibelt <artodeto@bazzline.net>
- * @since 2014-11-10 
+ * @since 2014-11-10
  */
 
 namespace Test\Net\Bazzline\Component\ProcessPipe;
@@ -31,6 +31,16 @@ class PipeTest extends TestCase
         $this->markTestIncomplete();
     }
 
+    public function testConstructWithInvalidArgument()
+    {
+        $this->markTestIncomplete();
+    }
+
+    public function testConstructWithInvalidArguments()
+    {
+        $this->markTestIncomplete();
+    }
+
     public function testPipeNoProcess()
     {
         $pipe = $this->getNewPipe();
@@ -42,27 +52,37 @@ class PipeTest extends TestCase
         $this->markTestIncomplete();
     }
 
+    public function testPipeWithInvalidArgument()
+    {
+        $this->markTestIncomplete();
+    }
+
+    public function testPipeWithInvalidArguments()
+    {
+        $this->markTestIncomplete();
+    }
+
     public function testPipeWithMultipleProcess()
     {
         $this->markTestIncomplete();
     }
 
-    public function testPipeWithFailingProcess()
+    public function testExecuteWithFailingProcess()
     {
         $this->markTestIncomplete();
     }
 
-    public function testPipeWithNoInput()
+    public function testExecuteWithNoInput()
     {
         $this->markTestIncomplete();
     }
 
-    public function testPipeWithNoOutput()
+    public function testExecuteWithNoOutput()
     {
         $this->markTestIncomplete();
     }
 
-    public function testPipeWithInputAndOutput()
+    public function testExecuteWithInputAndOutput()
     {
         $this->markTestIncomplete();
     }
@@ -71,6 +91,7 @@ class PipeTest extends TestCase
     //begin of helper
     /**
      * @return Pipe
+     * @todo move into project based test case
      */
     private function getNewPipe()
     {
