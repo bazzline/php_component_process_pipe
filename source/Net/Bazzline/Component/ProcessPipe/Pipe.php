@@ -16,10 +16,13 @@ class Pipe implements PipeInterface
     private $processes;
 
     /**
-     * @param ExecutableInterface $process
-     * [@param ExecutableInterface $process]
+     * Adds one or more process to the pipe
+     *
+     * @param ExecutableInterface $process - or more
+     * @param ExecutableInterface $_ [optional]
+     * @throws InvalidArgumentException
      */
-    public function __construct()
+    public function __construct(ExecutableInterface $process, $_ = null)
     {
         $this->processes = array();
 
@@ -43,11 +46,14 @@ class Pipe implements PipeInterface
     }
 
     /**
-     * @param ExecutableInterface $process
+     * Adds one or more process to the pipe
+     *
+     * @param ExecutableInterface $process - or more
+     * @param ExecutableInterface $_ [optional]
      * @throws InvalidArgumentException
      * @return $this
      */
-    public function pipe(ExecutableInterface $process)
+    public function pipe(ExecutableInterface $process, $_ = null)
     {
         foreach (func_get_args() as $index => $process) {
             if ($process instanceof ExecutableInterface) {
