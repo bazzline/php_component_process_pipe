@@ -7,6 +7,7 @@
 namespace Test\Net\Bazzline\Component\ProcessPipe;
 
 use Mockery;
+use Net\Bazzline\Component\ProcessPipe\Pipe;
 use PHPUnit_Framework_TestCase;
 
 /**
@@ -18,6 +19,7 @@ class TestCase extends PHPUnit_Framework_TestCase
     protected function tearDown()
     {
         Mockery::close();
+    }
 
     //begin of helper
     /**
@@ -28,5 +30,4 @@ class TestCase extends PHPUnit_Framework_TestCase
         return new Pipe();
     }
     //begin of helper
- }
 }
