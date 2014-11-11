@@ -7,18 +7,13 @@ Indeed, it is a [pseudo pipeline](http://en.wikipedia.org/wiki/Pipeline_(softwar
 Currently, there is no plan to bloat the code base with an implementation of [STDIN](http://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29), [STDOUT](http://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29) or [STDERR](http://en.wikipedia.org/wiki/Standard_streams#Standard_error_.28stderr.29).
 Errors can be handled by the thrown exception. Input is defined by the ExecutableInterface, as well as the output (return value).
 
-
-@todo
 The build status of the current master branch is tracked by Travis CI:
 [![Build Status](https://travis-ci.org/bazzline/php_component_process_pipe.png?branch=master)](http://travis-ci.org/bazzline/php_component_process_pipe)
 [![Latest stable](https://img.shields.io/packagist/v/net_bazzline/php_component_process_pipe.svg)](https://packagist.org/packages/net_bazzline/php_component_process_pipe)
 
-
-@todo
 The scrutinizer status are:
 [![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/) | [![code coverage](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/) | [![build status](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/)
 
-@todo
 The versioneye status is:
 [![dependencies](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146)
 
