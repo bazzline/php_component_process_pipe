@@ -12,7 +12,7 @@ The build status of the current master branch is tracked by Travis CI:
 [![Latest stable](https://img.shields.io/packagist/v/net_bazzline/php_component_process_pipe.svg)](https://packagist.org/packages/net_bazzline/php_component_process_pipe)
 
 The scrutinizer status are:
-[![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/) | [![build status](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/)
+[![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/)
 
 The versioneye status is:
 [![dependencies](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146)
@@ -29,6 +29,7 @@ It is also available at [openhub.net](https://www.openhub.net/p/php_component_pr
 * easy up unit testing for smaller processes
 * separate responsibility (data generator/transformer/validator/flow manipulator)
 * create process chains you can read in the code (separate integration code from operation code)
+* no dependencies (except you want to join the development team)
 
 # Examples
 
