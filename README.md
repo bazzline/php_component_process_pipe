@@ -20,8 +20,7 @@ The versioneye status is:
 Downloads:
 [![Downloads this Month](https://img.shields.io/packagist/dm/net_bazzline/php_component_process_pipe.svg)](https://packagist.org/packages/net_bazzline/php_component_process_pipe)
 
-@todo
-It is also available at [openhub.net](https://www.openhub.net/p/php_component_process_pipe).
+It is also available at [openhub.net](http://www.openhub.net/p/720386).
 
 # Why?
 
