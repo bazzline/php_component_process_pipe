@@ -130,6 +130,13 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 # Links
 
+## thanks to
+
+* [ralf westphal](http://ralfw.de/)
+* [the architects napkin](https://leanpub.com/thearchitectsnapkin-derschummelzettel)
+
+## other pipe implementations
+
 * [pipes](https://github.com/vkartaviy/pipes)
 * [php-pipeline](https://github.com/JosephMoniz/php-pipeline)
 * [php-pipeline-lib](https://github.com/phppro/php-pipeline-lib)
