@@ -118,6 +118,33 @@ try {
 }
 ```
 
+## By doing all
+
+```php
+use Net\Bazzline\Component\ProcessPipe\ExecutableException;
+use Net\Bazzline\Component\ProcessPipe\InvalidArgumentException;
+use Net\Bazzline\Component\ProcessPipe\Pipe;
+
+try {
+    $pipe = new Pipe(
+        new ProcessOne(),
+        new ProcessTwo()
+    );
+    
+    $pipe->pipe(new ProcessThree());
+    $pipe->pipe(
+        new ProcessFour(),
+        new ProcessFive()
+    );
+
+    $output = $pipe->execute($input);
+} catch (ExecutableException) {
+    //handle process exception
+} catch (InvalidArgumentException) {
+    //handle pipe exception
+}
+```
+
 
 # API
 
