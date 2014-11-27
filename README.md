@@ -42,7 +42,7 @@ It is also available at [openhub.net](http://www.openhub.net/p/720386).
 
 # Install
 
-## Manuel
+## By Hand
 
     mkdir -p vendor/net_bazzline/php_component_process_pipe
     cd vendor/net_bazzline/php_component_process_pipe
@@ -153,6 +153,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * [1.0.1](https://github.com/bazzline/php_component_process_pipe/tree/1.0.1) - not yet released
+    * add "StopExecutionException"
 * [1.0.0](https://github.com/bazzline/php_component_process_pipe/tree/1.0.0) - released at 12.11.2014
     * initial release
 
