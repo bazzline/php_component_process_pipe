@@ -1,6 +1,6 @@
 {
-    "description": "php component process to easy up creation of pipe process in php",
-    "keywords": ["php", "pipe", "process", "component", "process pipe"],
+    "description": "free as in freedom php component process to easy up creation of pipe process in php",
+    "keywords": ["php", "pipe", "process", "component", "process pipe", "lgpl", "free as in freedom"],
     "license": "LGPLv3",
     "name": "net_bazzline/php_component_process_pipe",
     "type": "library",
