@@ -153,6 +153,9 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * upcomming
+* [1.0.2](https://github.com/bazzline/php_component_process_pipe/tree/1.0.2) - released at 04.07.2015
+    * removed depenendy to phpmd
+    * updated dependency
 * [1.0.1](https://github.com/bazzline/php_component_process_pipe/tree/1.0.1) - released at 08.02.2015
     * add "StopExecutionException"
     * removed dependency to apigen
