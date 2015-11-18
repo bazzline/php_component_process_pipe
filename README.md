@@ -153,6 +153,8 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * upcomming
+* [1.0.4](https://github.com/bazzline/php_component_process_pipe/tree/1.0.4) - released at 18.11.2015
+    * updated dependency
 * [1.0.3](https://github.com/bazzline/php_component_process_pipe/tree/1.0.3) - released at 28.08.2015
     * updated dependency
 * [1.0.2](https://github.com/bazzline/php_component_process_pipe/tree/1.0.2) - released at 04.07.2015
