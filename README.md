@@ -153,6 +153,9 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * upcomming
+    * @todo
+        * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
+        * removed local api
 * [1.0.4](https://github.com/bazzline/php_component_process_pipe/tree/1.0.4) - released at 18.11.2015
     * updated dependency
 * [1.0.3](https://github.com/bazzline/php_component_process_pipe/tree/1.0.3) - released at 28.08.2015
