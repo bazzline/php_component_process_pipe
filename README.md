@@ -15,7 +15,7 @@ The scrutinizer status are:
 [![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_pipe/)
 
 The versioneye status is:
-[![dependencies](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146)
+[![dependencies](https://www.versioneye.com/user/projects/54613c39a23e418458000006/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54613c39a23e418458000006)
 
 Downloads:
 [![Downloads this Month](https://img.shields.io/packagist/dm/net_bazzline/php_component_process_pipe.svg)](https://packagist.org/packages/net_bazzline/php_component_process_pipe)
@@ -156,6 +156,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     * @todo
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
         * removed local api
+    * fixed invalid versionone link
 * [1.0.5](https://github.com/bazzline/php_component_process_pipe/tree/1.0.5) - released at 11.12.2015
     * updated dependency
 * [1.0.4](https://github.com/bazzline/php_component_process_pipe/tree/1.0.4) - released at 18.11.2015
