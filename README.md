@@ -156,8 +156,9 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     * @todo
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
         * removed local api
-    * fixed invalid versionone link
 * [1.1.0](https://github.com/bazzline/php_component_process_pipe/tree/1.1.0) - released at 06.03.2016
+    * added php 7.0 to travis ci
+    * fixed invalid versionone link
     * moved to psr-4 autoloading
     * updated dependency
 * [1.0.5](https://github.com/bazzline/php_component_process_pipe/tree/1.0.5) - released at 11.12.2015
