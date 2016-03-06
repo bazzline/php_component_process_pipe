@@ -1,6 +1,17 @@
 {
     "description": "free as in freedom php component process to easy up creation of pipe process in php",
-    "keywords": ["php", "pipe", "process", "component", "process pipe", "lgpl", "free as in freedom"],
+    "keywords": [
+        "bazzline",
+        "psr",
+        "psr-4",
+        "php",
+        "pipe",
+        "process",
+        "component",
+        "process pipe",
+        "lgpl",
+        "free as in freedom"
+    ],
     "license": "LGPLv3",
     "name": "net_bazzline/php_component_process_pipe",
     "type": "library",
@@ -18,13 +29,17 @@
     },
     "require-dev": {
         "mockery/mockery": "0.9.4",
-        "phpunit/phpunit": "4.8||~5.0"
+        "phpunit/phpunit": "~4.8||~5.2"
     },
     "autoload": {
-        "psr-0": {
-            "Example": "example/",
-            "Net\\Bazzline\\Component\\ProcessPipe": "source/",
-            "Test\\Net\\Bazzline\\Component\\ProcessPipe": "test/"
+        "psr-4": {
+            "Example\\": "example/",
+            "Net\\Bazzline\\Component\\ProcessPipe\\": "source/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Test\\Net\\Bazzline\\Component\\ProcessPipe\\": "test/"
         }
     }
 }

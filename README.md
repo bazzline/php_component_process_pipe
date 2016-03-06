@@ -157,6 +157,9 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
         * removed local api
     * fixed invalid versionone link
+* [1.1.0](https://github.com/bazzline/php_component_process_pipe/tree/1.1.0) - released at 06.03.2016
+    * moved to psr-4 autoloading
+    * updated dependency
 * [1.0.5](https://github.com/bazzline/php_component_process_pipe/tree/1.0.5) - released at 11.12.2015
     * updated dependency
 * [1.0.4](https://github.com/bazzline/php_component_process_pipe/tree/1.0.4) - released at 18.11.2015
@@ -189,3 +192,6 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 * [tacone pipes](https://github.com/tacone/pipes)
 * [plumber](https://github.com/jadell/plumber)
 
+# Final Words
+
+Star it if you like it :-). Add issues if you need it. Pull patches if you enjoy it. Write a blog entry if you use it. [Donate something](https://gratipay.com/~stevleibelt) if you love it :-].
