@@ -154,6 +154,7 @@ try {
 * upcomming
     * @todo
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
+* [1.1.1](https://github.com/bazzline/php_component_process_pipe/tree/1.1.1) - released at 29.07.2016
     * fixed invalid example links
     * removed local api
     * updated dependency
