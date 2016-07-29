@@ -145,18 +145,17 @@ try {
 }
 ```
 
-
 # API
 
-Thanks to [apigen](https://github.com/apigen/apigen), the api is available in the [document](https://github.com/bazzline/php_component_process_pipe/blob/master/document/index.html) section or [online](http://code.bazzline.net/).
+[API](http://www.bazzline.net/4fedd5481f448035b78eda04155168a08e3ee5b5/index.html) is available at [bazzline.net](http://www.bazzline.net).
 
 # History
 
 * upcomming
     * @todo
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
-        * removed local api
     * fixed invalid example links
+    * removed local api
     * updated dependency
 * [1.1.0](https://github.com/bazzline/php_component_process_pipe/tree/1.1.0) - released at 06.03.2016
     * added php 7.0 to travis ci
