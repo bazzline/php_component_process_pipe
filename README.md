@@ -32,13 +32,13 @@ It is also available at [openhub.net](http://www.openhub.net/p/720386).
 
 # Examples
 
-* [no input](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/NoInput/run.php)
-* [input array](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputArray/run.php)
-* [failing execution](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/FailingExecution/run.php)
-* [input generator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputGenerator/run.php)
-* [input transformer](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputTransformer/run.php)
-* [input validator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/InputValidator/run.php)
-* [data flow manipulator](https://github.com/bazzline/php_component_process_pipe/tree/master/example/Example/DataFlowManipulator/run.php)
+* [no input](https://github.com/bazzline/php_component_process_pipe/blob/master/example/NoInput/run.php)
+* [input array](https://github.com/bazzline/php_component_process_pipe/blob/master/example/InputArray/run.php)
+* [failing execution](https://github.com/bazzline/php_component_process_pipe/blob/master/example/FailingExecution/run.php)
+* [input generator](https://github.com/bazzline/php_component_process_pipe/blob/master/example/InputGenerator/run.php)
+* [input transformer](https://github.com/bazzline/php_component_process_pipe/blob/master/example/InputTransformer/run.php)
+* [input validator](https://github.com/bazzline/php_component_process_pipe/blob/master/example/InputValidator/run.php)
+* [data flow manipulator](https://github.com/bazzline/php_component_process_pipe/blob/master/example/DataFlowManipulator/run.php)
 
 # Install
 
@@ -156,9 +156,11 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     * @todo
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
         * removed local api
+    * fixed invalid example links
+    * updated dependency
 * [1.1.0](https://github.com/bazzline/php_component_process_pipe/tree/1.1.0) - released at 06.03.2016
     * added php 7.0 to travis ci
-    * fixed invalid versionone link
+    * fixed invalid version link
     * moved to psr-4 autoloading
     * updated dependency
 * [1.0.5](https://github.com/bazzline/php_component_process_pipe/tree/1.0.5) - released at 11.12.2015
