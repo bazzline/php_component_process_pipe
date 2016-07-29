@@ -10,6 +10,6 @@ use RuntimeException;
 
 /**
  * Class ExecutableException
- * @package De\Leibelt\ProcessPipeline
+ * @package Net\Bazzline\Component\ProcessPipe
  */
 class ExecutableException extends RuntimeException {}

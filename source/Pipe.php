@@ -8,7 +8,7 @@ namespace Net\Bazzline\Component\ProcessPipe;
 
 /**
  * Class ProcessPipe
- * @package De\Leibelt\ProcessPipeline
+ * @package Net\Bazzline\Component\ProcessPipe
  */
 class Pipe implements PipeInterface
 {

@@ -8,7 +8,7 @@ namespace Net\Bazzline\Component\ProcessPipe;
 
 /**
  * Interface PipeInterface
- * @package De\Leibelt\ProcessPipeline
+ * @package Net\Bazzline\Component\ProcessPipe
  */
 interface PipeInterface extends ExecutableInterface
 {
