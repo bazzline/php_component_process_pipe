@@ -1,6 +1,6 @@
 # Process Pipe Component in PHP
 
-This free as in freedom component easy up creation of a [pipe](http://en.wikipedia.org/wiki/Pipeline_(computing)) for processes in php.
+This free as in freedom component ease up creation of a [pipe](http://en.wikipedia.org/wiki/Pipeline_(computing)) for processes in php.
 
 Indeed, it is a [pseudo pipeline](http://en.wikipedia.org/wiki/Pipeline_(software)#Pseudo-pipelines) (process collection or process batch) since the php process is single threaded so far.
 
