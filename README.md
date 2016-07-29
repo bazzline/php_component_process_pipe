@@ -153,6 +153,7 @@ try {
 
 * upcomming
     * @todo
+        * add support for lambdafunctions or move to __invoke() fully
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
     * fixed invalid package names
 * [1.1.1](https://github.com/bazzline/php_component_process_pipe/tree/1.1.1) - released at 29.07.2016
