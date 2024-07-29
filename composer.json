@@ -25,11 +25,13 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=8.2"
     },
     "require-dev": {
-        "mockery/mockery": "0.9.4",
-        "phpunit/phpunit": "~4.8||~5.4"
+        "mockery/mockery": "~1.6",
+        "phpunit/phpunit": "~11",
+        "friendsofphp/php-cs-fixer": "dev-master",
+        "rector/rector": "dev-main"
     },
     "autoload": {
         "psr-4": {
