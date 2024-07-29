@@ -158,7 +158,9 @@ After code changes, please run:
 ```bash
 composer check
 ./vendor/bin/rector process
+./vendor/bin/php-cs-fixer fix example
 ./vendor/bin/php-cs-fixer fix source
+./vendor/bin/php-cs-fixer fix test
 ```
 
 ## Links

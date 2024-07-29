@@ -1,7 +1,7 @@
 <?php
 /**
  * @author stev leibelt <artodeto@bazzline.net>
- * @since 2014-11-08 
+ * @since 2014-11-08
  */
 
 namespace Example\FailingExecution;
@@ -35,10 +35,9 @@ class ProcessTwo implements ExecutableInterface
 {
     /**
      * @param mixed $input
-     * @return mixed
      * @throws \Net\Bazzline\Component\ProcessPipe\ExecutableException
      */
-    public function execute($input = null)
+    public function execute($input = null): never
     {
         throw new ExecutableException(__METHOD__ . ' has failed');
     }

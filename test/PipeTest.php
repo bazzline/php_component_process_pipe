@@ -86,7 +86,7 @@ class PipeTest extends TestCase
 
         $process->shouldReceive('execute')
             ->once()
-            ->andThrow('Net\Bazzline\Component\ProcessPipe\ExecutableException', 'unit test');
+            ->andThrow(\Net\Bazzline\Component\ProcessPipe\ExecutableException::class, 'unit test');
 
         $pipe->pipe($process);
         $pipe->execute();

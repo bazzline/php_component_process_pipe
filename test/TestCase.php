@@ -27,7 +27,7 @@ class TestCase extends PHPUnit_Framework_TestCase
      */
     protected function getMockOfProcess()
     {
-        return Mockery::mock('Net\Bazzline\Component\ProcessPipe\ExecutableInterface');
+        return Mockery::mock(\Net\Bazzline\Component\ProcessPipe\ExecutableInterface::class);
     }
 
     /**

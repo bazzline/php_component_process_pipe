@@ -7,7 +7,9 @@ use Rector\ValueObject\PhpVersion;
 
 return RectorConfig::configure()
   ->withPaths([
-      __DIR__ . '/source'
+      __DIR__ . '/example',
+      __DIR__ . '/source',
+      __DIR__ . '/test'
     ])
     // uncomment to reach your current PHP version
     ->withPhpSets(php83: true)

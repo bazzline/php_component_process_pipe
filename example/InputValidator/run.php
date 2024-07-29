@@ -25,9 +25,7 @@ class ProcessOne implements ExecutableInterface
      */
     public function execute($input = null)
     {
-        $input .= ' ' . __METHOD__;
-
-        return $input;
+        return $input . (' ' . __METHOD__);
     }
 }
 

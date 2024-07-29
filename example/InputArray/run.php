@@ -1,7 +1,7 @@
 <?php
 /**
  * @author stev leibelt <artodeto@bazzline.net>
- * @since 2014-11-08 
+ * @since 2014-11-08
  */
 
 namespace Example\InputArray;
@@ -51,11 +51,7 @@ class ProcessTwo implements ExecutableInterface
     }
 }
 
-$input = array(
-    'name' => 'foo',
-    'steps' => array(),
-    'times' => array()
-);
+$input = ['name' => 'foo', 'steps' => [], 'times' => []];
 $pipe = new Pipe();
 
 $pipe->pipe(

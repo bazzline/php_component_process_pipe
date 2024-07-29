@@ -1,7 +1,7 @@
 <?php
 /**
  * @author stev leibelt <artodeto@bazzline.net>
- * @since 2014-11-08 
+ * @since 2014-11-08
  */
 
 namespace Example\InputGenerator;
@@ -23,14 +23,7 @@ class DataGeneratorProcess implements ExecutableInterface
      */
     public function execute($input = null)
     {
-        $input = array();
-        $input[] = array(
-            microtime(true),
-            'debug',
-            'new generated log data'
-        );
-
-        return $input;
+        return [[microtime(true), 'debug', 'new generated log data']];
     }
 }
 
@@ -46,11 +39,7 @@ class ProcessTwo implements ExecutableInterface
      */
     public function execute($input = null)
     {
-        $input[] = array(
-            microtime(true),
-            'debug',
-            'hello world'
-        );
+        $input[] = [microtime(true), 'debug', 'hello world'];
 
         return $input;
     }

@@ -44,9 +44,7 @@ class StringProcess implements ExecutableInterface
      */
     public function execute($input = null)
     {
-        $input .= PHP_EOL . __METHOD__;
-
-        return $input;
+        return $input . (PHP_EOL . __METHOD__);
     }
 }
 
@@ -62,7 +60,6 @@ class DataFlowManipulator implements ExecutableInterface
     private $stringProcess;
 
     /**
-     * @param ArrayProcess $process
      * @return $this
      */
     public function setArrayProcess(ArrayProcess $process)
@@ -73,7 +70,6 @@ class DataFlowManipulator implements ExecutableInterface
     }
 
     /**
-     * @param StringProcess $process
      * @return $this
      */
     public function setStringProcess(StringProcess $process)
@@ -92,7 +88,7 @@ class DataFlowManipulator implements ExecutableInterface
     {
         if (is_array($input)) {
             return $this->arrayProcess->execute($input);
-        } else if (is_string($input)) {
+        } elseif (is_string($input)) {
             return $this->stringProcess->execute($input);
         } else {
             throw new ExecutableException('input must be from type of array or string');
@@ -110,6 +106,6 @@ $output = $pipe->execute('Hello World');
 echo 'string' . PHP_EOL;
 echo var_export($output, true) . PHP_EOL;
 
-$output = $pipe->execute(array('Hello World'));
+$output = $pipe->execute(['Hello World']);
 echo 'array' . PHP_EOL;
 echo var_export($output, true) . PHP_EOL;
