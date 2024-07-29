@@ -1,7 +1,7 @@
 <?php
 /**
  * @author stev leibelt <artodeto@bazzline.net>
- * @since 2014-11-07 
+ * @since 2014-11-07
  */
 
 namespace Net\Bazzline\Component\ProcessPipe;
@@ -13,21 +13,17 @@ namespace Net\Bazzline\Component\ProcessPipe;
 class Pipe implements PipeInterface
 {
     /** @var array|ExecutableInterface[] */
-    private $processes;
+    private $processes = [];
 
     /**
      * Adds one or more process to the pipe
      *
-     * @param ExecutableInterface $process - or more
-     * @param ExecutableInterface $_ [optional]
      * @throws InvalidArgumentException
      */
-    public function __construct(ExecutableInterface $process = null, $_ = null)
+    public function __construct()
     {
-        $this->processes = array();
-
         if (func_num_args() > 0) {
-            call_user_func_array(array($this, 'pipe'), func_get_args());
+            call_user_func_array($this->pipe(...), func_get_args());
         }
     }
 
@@ -61,8 +57,8 @@ class Pipe implements PipeInterface
             } else {
                 $message = 'Argument ' . $index . ' passed to ' . __METHOD__ .
                     '() must implement interface ' .
-                    'Net\Bazzline\Component\ProcessPipe\ExecutableInterface' .
-                    ', instance of ' . get_class($process) . ' given';
+                    \Net\Bazzline\Component\ProcessPipe\ExecutableInterface::class .
+                    ', instance of ' . $process::class . ' given';
                 throw new InvalidArgumentException($message);
             }
         }

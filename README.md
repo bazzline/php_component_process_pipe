@@ -155,7 +155,10 @@ try {
     * @todo
         * add support for lambdafunctions or move to __invoke() fully
         * added example for [tee](https://en.wikipedia.org/wiki/Tee_(command))
-    * fixed invalid package names
+    * @done
+        * fixed invalid package names
+        * Added rector
+        * Added php-cs-fixer
 * [1.1.1](https://github.com/bazzline/php_component_process_pipe/tree/1.1.1) - released at 29.07.2016
     * fixed invalid example links
     * removed local api

@@ -1,7 +1,7 @@
 <?php
 /**
  * @author stev leibelt <artodeto@bazzline.net>
- * @since 2014-11-07 
+ * @since 2014-11-07
  */
 
 namespace Net\Bazzline\Component\ProcessPipe;
@@ -21,4 +21,4 @@ interface PipeInterface extends ExecutableInterface
      * @return $this
      */
     public function pipe(ExecutableInterface $process, $_ = null);
-} 
+}
